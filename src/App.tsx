@@ -10,9 +10,11 @@ import {
   ListIcon,
   OrderedList,
   UnorderedList,
+  Flex,
 } from "@chakra-ui/react";
 import IssueCard from "./components/IssueCard";
 import { LaneArea } from "./components/ListArea/laneArea";
+import { FilterArea } from "./components/FilterArea/filterArea";
 
 interface IssueItem {
   id: string;
@@ -27,7 +29,7 @@ interface IssueItem {
 }
 
 const App: React.FC = () => {
-  const [issues, setIssues] = useState<IssueItem[]>([]);
+  const [issues, updateIssues] = useState<IssueItem[]>([]);
 
   useEffect(() => {
     fetchJson();
@@ -38,7 +40,7 @@ const App: React.FC = () => {
       .then((response) => response.json())
       .then((data) => {
         const issuesData: IssueItem[] = data;
-        setIssues(issuesData);
+        updateIssues(issuesData);
       })
       .catch((e: Error) => {
         console.log(e.message);
@@ -46,9 +48,10 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
-      <LaneArea issues={issues} />
-    </div>
+    <Flex flexDirection="column" bg={"#2f2236"}>
+      <FilterArea issues={issues} updateIssues={updateIssues} />
+      <LaneArea issues={issues} updateIssues={updateIssues} />
+    </Flex>
   );
 };
 
