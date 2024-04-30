@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
+import "./fonts/GlacialIndifference-Regular.otf";
 import "./App.css";
+
 import {
   ChakraProvider,
   Box,

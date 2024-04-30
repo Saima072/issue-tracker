@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Glacial"; /*Can be any text*/
+  src: local("GlacialIndifference-Regular"),
+    url("./fonts/GlacialIndifference-Regular.otf") format("opentype");
+}
+
 .App {
   text-align: center;
   width: auto;
@@ -41,6 +47,7 @@
 
 body {
   color: white;
+  font-family: "Glacial";
 }
 
 .chakra-input__right-element {
