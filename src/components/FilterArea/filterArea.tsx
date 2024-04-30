@@ -126,88 +126,94 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
         width="-webkit-fill-available"
         alignItems={"flex-start"}
       >
-        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
-          <Text>Filter By Category</Text>
-          <Select
-            variant="filled"
-            placeholder="Select category"
-            onChange={(event) =>
-              handleAddChip(event, event.target.value, "categories", "green")
-            }
-          >
-            {categories
-              .filter(
-                (category) =>
-                  !chips.some((chip) => chip.label === category.label)
-              )
-              .map((category) => (
-                <option key={category.value} value={category.value}>
-                  {category.label}
-                </option>
-              ))}
-          </Select>
+        <Flex className="innerFilter" flexDirection={"row"}>
+          <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
+            <Text>Filter By Category</Text>
+            <Select
+              variant="filled"
+              placeholder="Select category"
+              onChange={(event) =>
+                handleAddChip(event, event.target.value, "categories", "green")
+              }
+            >
+              {categories
+                .filter(
+                  (category) =>
+                    !chips.some((chip) => chip.label === category.label)
+                )
+                .map((category) => (
+                  <option key={category.value} value={category.value}>
+                    {category.label}
+                  </option>
+                ))}
+            </Select>
+          </Flex>
+
+          <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
+            <Text>Filter By Priority</Text>
+            <Select
+              variant="filled"
+              placeholder="Select priority"
+              onChange={(event) =>
+                handleAddChip(event, event.target.value, "priorities", "orange")
+              }
+            >
+              {priorities
+                .filter(
+                  (priority) =>
+                    !chips.some((chip) => chip.label === priority.label)
+                )
+                .map((priority) => (
+                  <option key={priority.value} value={priority.value}>
+                    {priority.label}
+                  </option>
+                ))}
+            </Select>
+          </Flex>
         </Flex>
 
-        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
-          <Text>Filter By Priority</Text>
-          <Select
-            variant="filled"
-            placeholder="Select priority"
-            onChange={(event) =>
-              handleAddChip(event, event.target.value, "priorities", "orange")
-            }
-          >
-            {priorities
-              .filter(
-                (priority) =>
-                  !chips.some((chip) => chip.label === priority.label)
-              )
-              .map((priority) => (
-                <option key={priority.value} value={priority.value}>
-                  {priority.label}
-                </option>
-              ))}
-          </Select>
-        </Flex>
+        <Flex className="innerFilter1" flexDirection={"row"}>
+          <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
+            <Text>Filter By Team</Text>
+            <Select
+              variant="outline"
+              placeholder="Select team"
+              onChange={(event) =>
+                handleAddChip(event, event.target.value, "teams", "teal")
+              }
+            >
+              {teams
+                .filter(
+                  (team) => !chips.some((chip) => chip.label === team.label)
+                )
+                .map((team) => (
+                  <option key={team.value} value={team.value}>
+                    {team.label}
+                  </option>
+                ))}
+            </Select>
+          </Flex>
 
-        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
-          <Text>Filter By Team</Text>
-          <Select
-            variant="outline"
-            placeholder="Select team"
-            onChange={(event) =>
-              handleAddChip(event, event.target.value, "teams", "teal")
-            }
-          >
-            {teams
-              .filter(
-                (team) => !chips.some((chip) => chip.label === team.label)
-              )
-              .map((team) => (
-                <option key={team.value} value={team.value}>
-                  {team.label}
-                </option>
-              ))}
-          </Select>
-        </Flex>
-
-        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
-          <Text>Filter By Tag</Text>
-          <Select
-            variant="outline"
-            placeholder="Select tag"
-            onChange={(event) =>
-              handleAddChip(event, event.target.value, "tags", "#911b1b")
-            }
-          >
-            {tags
-              .filter((tag) => !chips.some((chip) => chip.label === tag.label))
-              .map((tag) => (
-                <option key={tag.value} value={tag.value}>
-                  {tag.label}
-                </option>
-              ))}
-          </Select>
+          <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
+            <Text>Filter By Tag</Text>
+            <Select
+              variant="outline"
+              placeholder="Select tag"
+              onChange={(event) =>
+                handleAddChip(event, event.target.value, "tags", "#911b1b")
+              }
+            >
+              {tags
+                .filter(
+                  (tag) => !chips.some((chip) => chip.label === tag.label)
+                )
+                .map((tag) => (
+                  <option key={tag.value} value={tag.value}>
+                    {tag.label}
+                  </option>
+                ))}
+            </Select>
+          </Flex>
         </Flex>
       </Flex>
       <Flex flexDirection="row" justifyContent={"space-between"}>

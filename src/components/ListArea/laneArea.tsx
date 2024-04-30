@@ -80,7 +80,6 @@ export const LaneArea: FunctionComponent<LaneProps> = ({ finalissues }) => {
           scrollBehavior="smooth"
           maxH="65vh"
           h="100%"
-          w="22.5vw"
           direction="column"
           overflow="scroll"
           className="issue-list"
@@ -94,12 +93,28 @@ export const LaneArea: FunctionComponent<LaneProps> = ({ finalissues }) => {
   };
 
   return (
-    <Flex width="fit-content">
-      <Flex flexDirection="row" alignItems="flex-start">
-        {renderIssueList("To Do")}
-        {renderIssueList("In Progress")}
-        {renderIssueList("Review")}
-        {renderIssueList("Resolved")}
+    <Flex width="-webkit-fill-available">
+      <Flex
+        flexDirection="row"
+        alignItems="flex-start"
+        width="-webkit-fill-available"
+      >
+        <Flex
+          className="lanearea1"
+          flexDirection={"row"}
+          width="-webkit-fill-available"
+        >
+          {renderIssueList("To Do")}
+          {renderIssueList("In Progress")}
+        </Flex>
+        <Flex
+          className="lanearea2"
+          flexDirection={"row"}
+          width="-webkit-fill-available"
+        >
+          {renderIssueList("Review")}
+          {renderIssueList("Resolved")}
+        </Flex>
       </Flex>
     </Flex>
   );

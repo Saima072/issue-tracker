@@ -56,3 +56,27 @@ body {
   color: gray !important;
   padding-right: 4px;
 }
+.issue-list {
+  width: "22.5vw";
+}
+
+@media screen and (max-width: 1000px) {
+  .innerFilter {
+    flex-direction: column !important;
+  }
+  .innerFilter1 {
+    flex-direction: column !important;
+    padding-left: 70px;
+  }
+  .lanearea1 {
+    flex-direction: column !important;
+  }
+
+  .lanearea2 {
+    flex-direction: column !important;
+    padding-left: 70px;
+  }
+  .issue-list {
+    width: "-webkit-fill-available" !important;
+  }
+}

@@ -29,10 +29,10 @@ interface IssueCardProps {
 
 const IssueCard: React.FC<IssueCardProps> = ({ issue }) => {
   return (
-    <Card>
-      <Flex alignItems={"flex-start"}>
+    <Card width="-webkit-fill-available">
+      <Flex width="100%" alignItems={"flex-start"}>
         <List
-          width={"-webkit-fill-available"}
+          width="100%"
           paddingLeft="5px"
           fontSize="12px"
           borderRadius={"10px"}
