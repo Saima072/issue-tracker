@@ -12,6 +12,7 @@ import {
   TagLabel,
   TagCloseButton,
   Button,
+  ChakraProvider,
 } from "@chakra-ui/react";
 import React, { FunctionComponent, useEffect, useState } from "react";
 import IssueCard from "../IssueCard";
@@ -67,7 +68,6 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
 }) => {
   const [chips, setChips] = useState([
     { label: "UI", type: "tags", color: "#911b1b" },
-    { label: "Bug", type: "categories", color: "green" },
   ]);
 
   useEffect(() => {
@@ -119,7 +119,7 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
       p={"0.5rem"}
       border={"1px solid gray"}
       borderRadius={"10px"}
-      width={"-webkit-fill-available"}
+      width={{ base: "-webkit-fill-available", md: "90%" }}
     >
       <Flex
         flexDirection="row"
@@ -219,7 +219,6 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
               borderRadius="10px"
               p="5px"
               variant="outline"
-              bg={"transparent"}
               color={chip.color}
               borderColor={chip.color}
               border={"1px solid"}
@@ -250,8 +249,13 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
               setChips([]);
             }}
             cursor={"pointer"}
-            disabled={chips.length === 0} // Disable the button when chips state is not empty
-            _disabled={{ bg: "gray", color: "gray.500" }}
+            isDisabled={chips.length === 0} // Disable the button when chips state is not empty
+            _disabled={{
+              bg: "transparent",
+              color: "gray",
+              border: "1px solid gray",
+              cursor: "not-allowed", // Add cursor style for disabled state
+            }}
           >
             Reset Filters
           </Button>

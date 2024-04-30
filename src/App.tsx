@@ -52,7 +52,7 @@ const App: React.FC = () => {
   return (
     <Flex
       flexDirection="column"
-      bg={"#1f1e20"}
+      bg={"#11071c"}
       className="container-fluid"
       minH="100vh" // Ensure at least full viewport height
       minW="100vw"

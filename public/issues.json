@@ -8,7 +8,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["UI", "Login"]
+    "tag": ["UI"]
   },
   {
     "id": "2",
@@ -30,18 +30,18 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Database", "Performance"]
+    "tag": ["Performance"]
   },
   {
     "id": "4",
     "title": "Refactor user profile component",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Profile"]
+    "tag": ["UI"]
   },
   {
     "id": "5",
@@ -52,7 +52,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Product"]
+    "tag": ["UI"]
   },
   {
     "id": "6",
@@ -63,7 +63,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["UI", "Navigation"]
+    "tag": ["UI"]
   },
   {
     "id": "7",
@@ -74,13 +74,13 @@
     "category": "Feature",
     "priority": "Low",
     "team": "Backend",
-    "tag": ["UI", "Search"]
+    "tag": ["UI"]
   },
   {
     "id": "8",
     "title": "Fix performance issues",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Bug",
     "priority": "High",
@@ -96,7 +96,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Settings"]
+    "tag": ["UI"]
   },
   {
     "id": "10",
@@ -107,7 +107,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Notifications", "Email"]
+    "tag": ["UX"]
   },
   {
     "id": "11",
@@ -118,18 +118,18 @@
     "category": "Bug",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Links"]
+    "tag": ["UI"]
   },
   {
     "id": "12",
     "title": "Refactor backend APIs",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Enhancement",
     "priority": "High",
     "team": "Backend",
-    "tag": ["API", "Refactor"]
+    "tag": ["Performance"]
   },
   {
     "id": "13",
@@ -140,7 +140,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Dark Mode"]
+    "tag": ["UI"]
   },
   {
     "id": "14",
@@ -151,7 +151,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Feedback"]
+    "tag": ["UI"]
   },
   {
     "id": "15",
@@ -168,11 +168,10 @@
     "id": "16",
     "title": "Implement password recovery feature",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Feature",
     "priority": "Medium",
-
     "team": "Backend",
     "tag": ["Authentication", "Security"]
   },
@@ -185,7 +184,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Landing Page"]
+    "tag": ["UI"]
   },
   {
     "id": "18",
@@ -196,7 +195,7 @@
     "category": "Feature",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["Localization"]
+    "tag": ["UX"]
   },
   {
     "id": "19",
@@ -207,13 +206,13 @@
     "category": "Bug",
     "priority": "Low",
     "team": "Frontend",
-    "tag": ["UI", "Images"]
+    "tag": ["UI"]
   },
   {
     "id": "20",
     "title": "Implement user roles and permissions",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Feature",
     "priority": "High",
@@ -229,7 +228,7 @@
     "category": "Documentation",
     "priority": "Medium",
     "team": "QA",
-    "tag": ["Documentation"]
+    "tag": ["Performance"]
   },
   {
     "id": "22",
@@ -240,7 +239,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Error Handling"]
+    "tag": ["UX"]
   },
   {
     "id": "23",
@@ -251,18 +250,18 @@
     "category": "Feature",
     "priority": "Low",
     "team": "Frontend",
-    "tag": ["UI", "Keyboard"]
+    "tag": ["UI"]
   },
   {
     "id": "24",
     "title": "Fix broken form validation",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Bug",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["Validation"]
+    "tag": ["Security"]
   },
   {
     "id": "25",
@@ -273,7 +272,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["File Upload"]
+    "tag": ["UX"]
   },
   {
     "id": "26",
@@ -284,7 +283,7 @@
     "category": "Enhancement",
     "priority": "Low",
     "team": "Frontend",
-    "tag": ["UI", "Errors"]
+    "tag": ["UI"]
   },
   {
     "id": "27",
@@ -295,18 +294,18 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["Accessibility"]
+    "tag": ["UX"]
   },
   {
     "id": "28",
     "title": "Fix broken API endpoints",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["API"]
+    "tag": ["Security"]
   },
   {
     "id": "29",
@@ -317,7 +316,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["Onboarding"]
+    "tag": ["UX"]
   },
   {
     "id": "30",
@@ -328,7 +327,7 @@
     "category": "Testing",
     "priority": "Medium",
     "team": "QA",
-    "tag": ["Testing", "Unit Tests"]
+    "tag": ["Performance"]
   },
   {
     "id": "31",
@@ -339,18 +338,18 @@
     "category": "Enhancement",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Refactor"]
+    "tag": ["Performance"]
   },
   {
     "id": "32",
     "title": "Update user dashboard design",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "To Do",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Dashboard"]
+    "tag": ["UI"]
   },
   {
     "id": "33",
@@ -361,7 +360,7 @@
     "category": "Feature",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Integration"]
+    "tag": ["Performance"]
   },
   {
     "id": "34",
@@ -372,7 +371,7 @@
     "category": "Documentation",
     "priority": "Medium",
     "team": "QA",
-    "tag": ["Documentation"]
+    "tag": ["Performance"]
   },
   {
     "id": "35",
@@ -383,18 +382,18 @@
     "category": "Enhancement",
     "priority": "Low",
     "team": "Backend",
-    "tag": ["Error Logging"]
+    "tag": ["Performance"]
   },
   {
     "id": "36",
     "title": "Add support for user avatars",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["User Avatar"]
+    "tag": ["UI"]
   },
   {
     "id": "37",
@@ -405,7 +404,7 @@
     "category": "Enhancement",
     "priority": "High",
     "team": "Design",
-    "tag": ["UI", "Billing"]
+    "tag": ["UI"]
   },
   {
     "id": "38",
@@ -416,7 +415,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["Checkout"]
+    "tag": ["Performance"]
   },
   {
     "id": "39",
@@ -427,18 +426,18 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Mobile"]
+    "tag": ["UI", "UX"]
   },
   {
     "id": "40",
     "title": "Update admin dashboard",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "To Do",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["UI", "Admin Dashboard"]
+    "tag": ["UI"]
   },
   {
     "id": "41",
@@ -449,7 +448,7 @@
     "category": "Feature",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["Localization"]
+    "tag": ["UX"]
   },
   {
     "id": "42",
@@ -460,7 +459,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["Registration"]
+    "tag": ["UX"]
   },
   {
     "id": "43",
@@ -471,29 +470,29 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Notifications", "Email"]
+    "tag": ["UX"]
   },
   {
     "id": "44",
     "title": "Add support for push notifications",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Notifications", "Push"]
+    "tag": ["UX"]
   },
   {
     "id": "45",
     "title": "Update footer design",
     "userName": "John Doe",
     "userAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
-    "status": "Resolved",
+    "status": "To Do",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Footer"]
+    "tag": ["UI"]
   },
   {
     "id": "46",
@@ -504,7 +503,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Payments"]
+    "tag": ["Security"]
   },
   {
     "id": "47",
@@ -515,18 +514,18 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Permissions"]
+    "tag": ["UX", "Authentication"]
   },
   {
     "id": "48",
     "title": "Update user profile design",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Profile"]
+    "tag": ["UI"]
   },
   {
     "id": "49",
@@ -548,7 +547,7 @@
     "category": "Enhancement",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Performance", "Dashboard"]
+    "tag": ["Performance", "UX"]
   },
   {
     "id": "51",
@@ -559,18 +558,18 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Webhooks"]
+    "tag": ["Performance"]
   },
   {
     "id": "52",
     "title": "Update user dashboard layout",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "To Do",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Dashboard"]
+    "tag": ["UI", "UX"]
   },
   {
     "id": "53",
@@ -581,7 +580,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Email", "Templates"]
+    "tag": ["UX", "Performance"]
   },
   {
     "id": "54",
@@ -592,7 +591,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["UI", "Checkout"]
+    "tag": ["UI"]
   },
   {
     "id": "55",
@@ -603,18 +602,18 @@
     "category": "Feature",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["UI", "Dark Mode"]
+    "tag": ["UI"]
   },
   {
     "id": "56",
     "title": "Fix broken error handling",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Error Handling"]
+    "tag": ["Performance"]
   },
   {
     "id": "57",
@@ -625,7 +624,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Profile"]
+    "tag": ["UI", "UX"]
   },
   {
     "id": "58",
@@ -647,18 +646,18 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["API"]
+    "tag": ["Performance"]
   },
   {
     "id": "60",
     "title": "Update user registration form",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Registration"]
+    "tag": ["UI"]
   },
   {
     "id": "61",
@@ -669,7 +668,7 @@
     "category": "Feature",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Security", "Encryption"]
+    "tag": ["Security"]
   },
   {
     "id": "62",
@@ -680,7 +679,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["Forms"]
+    "tag": ["UX", "UI"]
   },
   {
     "id": "63",
@@ -697,12 +696,12 @@
     "id": "64",
     "title": "Improve user feedback mechanism",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "To Do",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Feedback"]
+    "tag": ["UI"]
   },
   {
     "id": "65",
@@ -713,7 +712,7 @@
     "category": "Bug",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Links"]
+    "tag": ["UI"]
   },
   {
     "id": "66",
@@ -724,7 +723,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Images"]
+    "tag": ["UI"]
   },
   {
     "id": "67",
@@ -735,18 +734,18 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Logging"]
+    "tag": ["Performance"]
   },
   {
     "id": "68",
     "title": "Update billing page layout",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Billing"]
+    "tag": ["UI", "UX"]
   },
   {
     "id": "69",
@@ -757,7 +756,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Payments"]
+    "tag": ["Security", "Authentication"]
   },
   {
     "id": "70",
@@ -768,7 +767,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Permissions"]
+    "tag": ["UX"]
   },
   {
     "id": "71",
@@ -779,13 +778,13 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Profile"]
+    "tag": ["UI"]
   },
   {
     "id": "72",
     "title": "Add support for email verification",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Feature",
     "priority": "High",
@@ -801,7 +800,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["API"]
+    "tag": ["Security", "Performance"]
   },
   {
     "id": "74",
@@ -812,7 +811,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Registration"]
+    "tag": ["UI"]
   },
   {
     "id": "75",
@@ -823,18 +822,18 @@
     "category": "Feature",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Security", "Encryption"]
+    "tag": ["Security", "Performance"]
   },
   {
     "id": "76",
     "title": "Fix broken form submissions",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "To Do",
     "category": "Bug",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["Forms"]
+    "tag": ["Performance"]
   },
   {
     "id": "77",
@@ -856,7 +855,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Feedback"]
+    "tag": ["UI"]
   },
   {
     "id": "79",
@@ -867,18 +866,18 @@
     "category": "Bug",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Links"]
+    "tag": ["UI"]
   },
   {
     "id": "80",
     "title": "Add support for image lazy loading",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Images"]
+    "tag": ["UI", "Performance"]
   },
   {
     "id": "81",
@@ -889,7 +888,7 @@
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Logging"]
+    "tag": ["Performance"]
   },
   {
     "id": "82",
@@ -900,7 +899,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Billing"]
+    "tag": ["UI"]
   },
   {
     "id": "83",
@@ -911,18 +910,18 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Payments"]
+    "tag": ["Performance"]
   },
   {
     "id": "84",
     "title": "Add support for user permissions",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "Review",
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Permissions"]
+    "tag": ["UX", "Authentication"]
   },
   {
     "id": "85",
@@ -933,7 +932,7 @@
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Profile"]
+    "tag": ["UI"]
   },
   {
     "id": "86",
@@ -955,18 +954,18 @@
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["API"]
+    "tag": ["Performance"]
   },
   {
     "id": "88",
     "title": "Update user registration form",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "To Do",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Registration"]
+    "tag": ["UI"]
   },
   {
     "id": "89",
@@ -977,7 +976,7 @@
     "category": "Feature",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Security", "Encryption"]
+    "tag": ["Security"]
   },
   {
     "id": "90",
@@ -988,7 +987,7 @@
     "category": "Bug",
     "priority": "High",
     "team": "Frontend",
-    "tag": ["Forms"]
+    "tag": ["UX", "Performance"]
   },
   {
     "id": "91",
@@ -1005,12 +1004,12 @@
     "id": "92",
     "title": "Improve user feedback mechanism",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
     "status": "In Progress",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Feedback"]
+    "tag": ["UI"]
   },
   {
     "id": "93",
@@ -1021,80 +1020,80 @@
     "category": "Bug",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Links"]
+    "tag": ["UI", "Performance"]
   },
   {
     "id": "94",
     "title": "Add support for image lazy loading",
     "userName": "Alice Smith",
     "userAvatar": "https://randomuser.me/api/portraits/women/2.jpg",
-    "status": "To Do",
+    "status": "Resolved",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Frontend",
-    "tag": ["UI", "Images"]
+    "tag": ["UI"]
   },
   {
     "id": "95",
     "title": "Implement user activity logs",
     "userName": "David Johnson",
     "userAvatar": "https://randomuser.me/api/portraits/men/3.jpg",
-    "status": "In Progress",
+    "status": "Resolved",
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Logging"]
+    "tag": ["Performance"]
   },
   {
     "id": "96",
     "title": "Update billing page layout",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
-    "status": "Review",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
+    "status": "Resolved",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Billing"]
+    "tag": ["UI"]
   },
   {
     "id": "97",
     "title": "Fix broken payment gateway integration",
     "userName": "John Doe",
     "userAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
-    "status": "To Do",
+    "status": "Resolved",
     "category": "Bug",
     "priority": "High",
     "team": "Backend",
-    "tag": ["Payments"]
+    "tag": ["Security"]
   },
   {
     "id": "98",
     "title": "Add support for user permissions",
     "userName": "Alice Smith",
     "userAvatar": "https://randomuser.me/api/portraits/women/2.jpg",
-    "status": "In Progress",
+    "status": "Resolved",
     "category": "Feature",
     "priority": "Medium",
     "team": "Backend",
-    "tag": ["Permissions"]
+    "tag": ["Authentication"]
   },
   {
     "id": "99",
     "title": "Update user profile design",
     "userName": "David Johnson",
     "userAvatar": "https://randomuser.me/api/portraits/men/3.jpg",
-    "status": "Review",
+    "status": "Resolved",
     "category": "Enhancement",
     "priority": "Medium",
     "team": "Design",
-    "tag": ["UI", "Profile"]
+    "tag": ["UI"]
   },
   {
     "id": "100",
     "title": "Add support for email verification",
     "userName": "Emma Williams",
-    "userAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
-    "status": "To Do",
+    "userAvatar": "https://randomuser.me/api/portraits/women/4.jpg",
+    "status": "Resolved",
     "category": "Feature",
     "priority": "High",
     "team": "Frontend",
