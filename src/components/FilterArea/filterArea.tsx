@@ -11,8 +11,9 @@ import {
   Tag,
   TagLabel,
   TagCloseButton,
+  Button,
 } from "@chakra-ui/react";
-import React, { FunctionComponent, useState } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import IssueCard from "../IssueCard";
 import { MagnifyingGlass } from "@phosphor-icons/react";
 
@@ -43,21 +44,59 @@ const tags = [
   { label: "Performance", value: "Performance" },
 ];
 
+interface IssueItem {
+  id: string;
+  title: string;
+  userName: string;
+  userAvatar?: string;
+  status: string;
+  category: string;
+  priority: string;
+  team: string;
+  tag: string[];
+}
+
 type FilterProps = {
   issues: any[]; // Update type to match your issue item type
-  updateIssues: any;
+  setFilteredIssues: any;
 };
 
 export const FilterArea: FunctionComponent<FilterProps> = ({
   issues,
-  updateIssues,
+  setFilteredIssues,
 }) => {
   const [chips, setChips] = useState([
-    { label: "UI", type: "tags", color: "red" },
-    { label: "Frontend", type: "teams", color: "blue" },
+    { label: "UI", type: "tags", color: "#911b1b" },
     { label: "Bug", type: "categories", color: "green" },
-    { label: "Low", type: "priorities", color: "orange" },
   ]);
+
+  useEffect(() => {
+    // Function to filter issues based on selected chips
+    const filterIssues = (issues: IssueItem[]) => {
+      return issues.filter((issue) => {
+        return chips.every((chip) => {
+          switch (chip.type) {
+            case "categories":
+              return issue.category === chip.label;
+            case "priorities":
+              return issue.priority === chip.label;
+            case "teams":
+              return issue.team === chip.label;
+            case "tags":
+              return issue.tag.includes(chip.label);
+            default:
+              return true;
+          }
+        });
+      });
+    };
+
+    // Filter issues based on selected chips
+    const filtered = filterIssues(issues);
+
+    // Update filtered issues state
+    setFilteredIssues(filtered);
+  }, [chips, issues]);
 
   function handleAddChip(
     event: any,
@@ -78,12 +117,16 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
       m={"0.5rem"}
       flexDirection={"column"}
       p={"0.5rem"}
-      width={"fit-content"}
       border={"1px solid gray"}
       borderRadius={"10px"}
+      width={"-webkit-fill-available"}
     >
-      <Flex flexDirection="row" alignItems={"flex-start"}>
-        <Flex flexDirection="column" m={"1rem"}>
+      <Flex
+        flexDirection="row"
+        width="-webkit-fill-available"
+        alignItems={"flex-start"}
+      >
+        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
           <Text>Filter By Category</Text>
           <Select
             variant="filled"
@@ -105,7 +148,7 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
           </Select>
         </Flex>
 
-        <Flex flexDirection="column" m={"1rem"} width={"230px"}>
+        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
           <Text>Filter By Priority</Text>
           <Select
             variant="filled"
@@ -127,13 +170,13 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
           </Select>
         </Flex>
 
-        <Flex flexDirection="column" m={"1rem"} width={"230px"}>
+        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
           <Text>Filter By Team</Text>
           <Select
             variant="outline"
             placeholder="Select team"
             onChange={(event) =>
-              handleAddChip(event, event.target.value, "teams", "blue")
+              handleAddChip(event, event.target.value, "teams", "teal")
             }
           >
             {teams
@@ -148,13 +191,13 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
           </Select>
         </Flex>
 
-        <Flex flexDirection="column" m={"1rem"} width={"230px"}>
+        <Flex flexDirection="column" m={"1rem"} width={"22.5vw"}>
           <Text>Filter By Tag</Text>
           <Select
             variant="outline"
             placeholder="Select tag"
             onChange={(event) =>
-              handleAddChip(event, event.target.value, "tags", "red")
+              handleAddChip(event, event.target.value, "tags", "#911b1b")
             }
           >
             {tags
@@ -167,30 +210,51 @@ export const FilterArea: FunctionComponent<FilterProps> = ({
           </Select>
         </Flex>
       </Flex>
-      <Flex flexDirection="row">
+      <Flex flexDirection="row" justifyContent={"space-between"}>
         <HStack m={"1rem"}>
           {chips.map((chip) => (
             <Tag
-              border="1px solid gray"
               size={"sm"}
               key={chip.label}
-              borderRadius="5px"
+              borderRadius="10px"
               p="5px"
               variant="outline"
-              bg={chip.color}
+              bg={"transparent"}
+              color={chip.color}
+              borderColor={chip.color}
+              border={"1px solid"}
             >
               <TagLabel fontSize={"12px"}>{chip.label}</TagLabel>
               <TagCloseButton
                 boxSize={"5px"}
                 bg={"transparent"}
                 border={"none"}
-                color={"white"}
+                color={chip.color}
                 paddingLeft={"8px"}
                 onClick={() => handleDelete(chip.label)}
                 cursor={"pointer"}
               />
             </Tag>
           ))}
+        </HStack>
+        <HStack>
+          <Button
+            height={"30px"}
+            verticalAlign={"middle"}
+            borderRadius={"5px"}
+            bg={"transparent"}
+            color={"lightblue"}
+            marginRight={"10px"}
+            border="1px solid lightblue"
+            onClick={() => {
+              setChips([]);
+            }}
+            cursor={"pointer"}
+            disabled={chips.length === 0} // Disable the button when chips state is not empty
+            _disabled={{ bg: "gray", color: "gray.500" }}
+          >
+            Reset Filters
+          </Button>
         </HStack>
       </Flex>
     </Flex>

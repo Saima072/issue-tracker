@@ -34,7 +34,7 @@
 
 .chakra-select {
   width: 210px;
-  background-color: #2f2236;
+  background-color: #302e32;
   color: white;
   border-radius: 5px;
 }
@@ -47,5 +47,5 @@ body {
   top: 8px !important;
   right: 6px !important;
   color: gray !important;
-  padding-right: 2px;
+  padding-right: 4px;
 }

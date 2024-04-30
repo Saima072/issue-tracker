@@ -32,9 +32,10 @@ const IssueCard: React.FC<IssueCardProps> = ({ issue }) => {
     <Card>
       <Flex alignItems={"flex-start"}>
         <List
-          w={"220px"}
+          width={"-webkit-fill-available"}
           paddingLeft="5px"
           fontSize="12px"
+          borderRadius={"10px"}
           spacing={1}
           border={"1px solid gray"}
         >

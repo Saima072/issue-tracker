@@ -29,7 +29,8 @@ interface IssueItem {
 }
 
 const App: React.FC = () => {
-  const [issues, updateIssues] = useState<IssueItem[]>([]);
+  const [issues, setIssues] = useState<IssueItem[]>([]);
+  const [filteredIssues, setFilteredIssues] = useState<IssueItem[]>(issues);
 
   useEffect(() => {
     fetchJson();
@@ -40,7 +41,8 @@ const App: React.FC = () => {
       .then((response) => response.json())
       .then((data) => {
         const issuesData: IssueItem[] = data;
-        updateIssues(issuesData);
+        setIssues(issuesData);
+        setFilteredIssues(issuesData);
       })
       .catch((e: Error) => {
         console.log(e.message);
@@ -48,9 +50,27 @@ const App: React.FC = () => {
   };
 
   return (
-    <Flex flexDirection="column" bg={"#2f2236"}>
-      <FilterArea issues={issues} updateIssues={updateIssues} />
-      <LaneArea issues={issues} updateIssues={updateIssues} />
+    <Flex
+      flexDirection="column"
+      bg={"#1f1e20"}
+      className="container-fluid"
+      minH="100vh" // Ensure at least full viewport height
+      minW="100vw"
+    >
+      <Box
+        width="-webkit-fill-available" // Responsive width
+        margin="0 auto" // Center align on larger screens
+        padding={{ base: 4, md: 6 }} // Responsive padding
+      >
+        <FilterArea issues={issues} setFilteredIssues={setFilteredIssues} />
+      </Box>
+      <Box
+        width="-webkit-fill-available" // Responsive width
+        margin="0 auto" // Center align on larger screens
+        padding={{ base: 4, md: 6 }} // Responsive padding
+      >
+        <LaneArea finalissues={filteredIssues} />
+      </Box>
     </Flex>
   );
 };

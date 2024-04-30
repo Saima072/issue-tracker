@@ -11,11 +11,10 @@ import IssueCard from "../IssueCard";
 import { MagnifyingGlass } from "@phosphor-icons/react";
 
 type LaneProps = {
-  issues: any[]; // Update type to match your issue item type
-  updateIssues: any;
+  finalissues: any[]; // Update type to match your issue item type
 };
 
-export const LaneArea: FunctionComponent<LaneProps> = ({ issues }) => {
+export const LaneArea: FunctionComponent<LaneProps> = ({ finalissues }) => {
   // State to store the search input value for each lane
   const [searchInputs, setSearchInputs] = useState<{ [key: string]: string }>({
     "To Do": "",
@@ -44,8 +43,9 @@ export const LaneArea: FunctionComponent<LaneProps> = ({ issues }) => {
 
   // Render filtered issue list for a particular status
   const renderIssueList = (status: string) => {
-    const filteredIssues = issues.filter(
-      (issue) => issue.status === status && filterIssues(issue, status)
+    const filteredIssues = finalissues.filter(
+      (finalissue) =>
+        finalissue.status === status && filterIssues(finalissue, status)
     );
 
     return (
@@ -55,7 +55,7 @@ export const LaneArea: FunctionComponent<LaneProps> = ({ issues }) => {
         border="1px solid gray"
         borderRadius="10px"
         p="0.5rem"
-        width="230px"
+        width={"-webkit-fill-available"}
       >
         <Flex flexDirection="row">
           <Text fontSize="10px">{status}</Text>
@@ -64,7 +64,7 @@ export const LaneArea: FunctionComponent<LaneProps> = ({ issues }) => {
               type="text"
               value={searchInputs[status]}
               onChange={(e) => handleSearchInputChange(e, status)}
-              bg="#2f2236"
+              bg="#302e32"
               color={"white"}
               outline={"none"}
               border={"1px solid gray"}
@@ -80,7 +80,7 @@ export const LaneArea: FunctionComponent<LaneProps> = ({ issues }) => {
           scrollBehavior="smooth"
           maxH="65vh"
           h="100%"
-          w="100%"
+          w="22.5vw"
           direction="column"
           overflow="scroll"
           className="issue-list"
